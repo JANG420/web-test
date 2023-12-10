@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>WEB</title>
+        <link rel="stylesheet" href="main_styles.css">
+    </head>
+    <body>
+        <div class="links">
+            <a href="index.html">Go to Login</a>
+        </div>
+        <div class="main-container">
+            <div class="box">
+                <div class="members">
+                    <img src="test.jpeg" alt = "프로필">
+                    <h2>내 프로필</h2>
+                    <p> just test</p>
+                </div>
+                <div class="members">
+                    <div class="member">
+                        <p> asida</p>
+                    </div>
+                    <div class="member">
+                        <p> zxiv</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="chat-box">
+                <div id="message-container"></div>
+                <div class="input-container">
+                    <input type="text" class="input" id="user-input" onkeydown="KeyPress(event)">
+                    <button class="input-button" onclick="SendMessage()">Send</button>
+                </div>
+            </div>
+            <div class="box" id="post-box">
+                <div class="members">
+                    <p> 게시글 1</p>
+                </div>
+            </div>
+            <div class="modal" id="post-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>게시글 테스트 중입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sub-box" id="check-box"></div>
+            <div class="sub-box" id="test-box"></div>
+        </div>
+    </body>
+
+    <script src="main_script.js"></script>
+</html>
